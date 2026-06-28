@@ -181,3 +181,40 @@ a{
     transform: translateY(-5px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
+
+.service-card{
+    background: var(--card-light);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    height: 100%;
+    text-align: center;
+}
+
+.service-card:hover{
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        background: var(--gradient);
+        color: white;
+}
+
+/* .service-card:hover h3, .service-card:hover{
+    color: white;
+} */
+.service-card:hover{
+    background: var(--gradient);
+    color: white;
+}
+
+.service-card:hover h3,
+.service-card:hover p,
+.service-card:hover i{
+    color: white;
+}
+.service-card i{
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    transition: var(--transition);
+}
